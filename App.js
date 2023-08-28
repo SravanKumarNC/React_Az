@@ -1,18 +1,9 @@
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 
+
+const heading = React.createElement("h1", {}, "Namaste React");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const parent = React.createElement(
-    "div", 
-    {id: "parent"}, 
-    [React.createElement(
-        "div", 
-        {id: "children"}, 
-        [React.createElement("h1", {},"Nested tags"),React.createElement("h1", {},"Nested tags")]
-    ),
-    React.createElement(
-        "div", 
-        {id: "children"}, 
-        [React.createElement("h1", {},"Nested tags"),React.createElement("h1", {},"Nested tags")]
-    )]
-);
-// const heading = React.createElement("h1", {}, "Hello world from react");
-root.render(parent);
+
+const jsxHeading = <h1>Namaste React from JSX</h1>;
+root.render(jsxHeading);
